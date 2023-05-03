@@ -1,0 +1,9 @@
+---
+ - name: create file and add data in file
+   hosts: prakash41
+   tasks:
+   - name: create file
+     file: dest=/tmp/prakash state=touch mode=777 ownerprakash group=bat22a
+
+   - name: add data in file
+     lineinfile: dest=/tmp/prakash line='THIS IS MY PERSONAL DATA'
