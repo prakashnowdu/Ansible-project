@@ -1,0 +1,8 @@
+---
+ - name: without handlers
+   hosts: nagu9
+   tasks:
+   - name: copy file
+     copy: src=/etc/fstab dest=/var/www/html/index.html
+   - name: restart httpd service
+     service: name=httpd state=restarted
