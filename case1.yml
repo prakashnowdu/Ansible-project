@@ -1,0 +1,9 @@
+---
+ - name: create data in file
+   hosts: prakash9
+   tasks:
+   - name: copy the data in file
+     copy: dest=/tmp/prakash content='THIS IS MY PERSONAL DATA'
+
+   - name: backup and modify the file
+     copy: dest=/tmp/prakash content='MY EDITED DATA' backup=yes
