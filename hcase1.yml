@@ -1,6 +1,6 @@
 ---
  - name: without handlers
-   hosts: nagu9
+   hosts: prakash41
    tasks:
    - name: copy file
      copy: src=/etc/fstab dest=/var/www/html/index.html
