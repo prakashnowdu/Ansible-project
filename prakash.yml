@@ -1,0 +1,8 @@
+---
+ - name: fire the below command
+   hosts: prakash
+   tasks:
+   - name: kernel version
+     command: uname -r
+     register: kernel
+   - debug: var=kernel.stdout
